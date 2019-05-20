@@ -1,0 +1,54 @@
+= Sample Technical Document
+João Pinto <jpinto@ccsint.eu>
+v0.1, May 16, 2019: First incarnation
+:doctype: book
+:reproducible:
+:source-highlighter: rouge
+:listing-caption: Listing
+:pdf-stylesdir: resources/themes
+:pdf-fontsdir: resources/fonts
+:pdf-style: corporate-theme.yml
+:toc:
+
+// Uncomment next line to set page size (default is A4)
+//:pdf-page-size: Letter
+
+A simple http://asciidoc.org[AsciiDoc] document.
+
+== Introduction
+
+A paragraph followed by an unordered list{empty}footnote:[AsciiDoc supports unordered, ordered, and description lists.] with square bullets.footnote:[You may choose from square, disc, and circle for the bullet style.]
+
+[square]
+* item 1
+* item 2
+
+It also supports *bold* and _italic_ .
+
+Here's how you say "`Hello, World!`" in Prawn:
+
+.Create a basic PDF document using Prawn
+[source,ruby]
+----
+require 'prawn'
+
+Prawn::Document.generate 'example.pdf' do
+  text 'Hello, World!'
+end
+----
+=== Introduction 2
+
+== Conclusion
+
+That's all, folks!
+
+== Revision History
+
+[cols="^1,6,^2", options="header"]
+|===
+3+^|Version 0.0.1, 20 May 2019
+h|Issue
+h|Details
+h|Author
+|#12|Added the revision section|João Pinto
+|===

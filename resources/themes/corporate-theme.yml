@@ -1,0 +1,42 @@
+font:
+    catalog:
+        Lato:
+            normal: Lato-Regular.ttf
+            italic: Lato-Italic.ttf
+            bold: Lato-Bold.ttf
+            bold_italic: Lato-BoldItalic.ttf
+
+
+base:
+    font_family: Lato
+
+title_page_logo:
+    image: CCS_Group-International_RGB.png
+
+header:
+    height: 0.75in
+    line_height: 2
+    recto:
+        center:
+            content: image:CCS_Group-International_RGB.png[width=100]
+
+footer:
+    height: 0.75in
+    line_height: 2
+    recto:
+        right:
+            content: '{section-or-chapter-title} | *{page-number}*'
+        center:
+            content: '(C) CCS Group -- {doctitle} v{revnumber}'
+    verso:
+        left:
+            content: '*{page-number}* | {chapter-title}'
+        center:
+            content: '(C) CCS Group -- {doctitle} v{revnumber}'
+
+table:
+    head:
+        background_color: #a0a0a0
+
+    header_cell:
+        background_color: #f0f0f0
